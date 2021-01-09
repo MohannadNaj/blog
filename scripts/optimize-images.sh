@@ -15,7 +15,7 @@ do
     dest="${f/posts/posts-optimized}"
     parentdir="$(dirname "$dest")"
     mkdir -p $parentdir
-    convert "./$f" -blur 13x20 -filter LanczosRadius -resize 105%x105% \( "$f" -gravity center +repage \) -composite -compose screen "$dest"
+    convert "./$f" -blur 13x20 -resize 105%x105% \( "$f" -gravity center +repage \) -composite -compose screen "$dest"
     convert "$dest" -resize 700\> "$dest"
 #    clear
 
