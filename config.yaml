@@ -1,0 +1,34 @@
+baseURL: https://mohannadnaj.me/
+languageCode: en-us
+title: MohannadNaj.me
+theme: hugo-PaperMod
+disqusShortname: MohannadNaj.me
+params:
+  ShowReadingTime: true
+  comments: true
+  homeInfoParams:
+    Title: My name is Mohannad Najjar
+    Content: >-
+      A blog about Web Development, Software Engineering, Laravel stack, Open
+      source and more
+  socialIcons:
+    - name: github
+      url: https://github.com/MohannadNaj/
+    - name: linkedin
+      url: https://www.linkedin.com/in/MohannadNaj/
+    - name: twitter
+      url: https://twitter.com/MohannadNaj
+menu:
+  main:
+    - name: Blog
+      weight: 1
+      url: /posts/
+    - name: Tags
+      weight: 2
+      url: /tags/
+markup:
+  highlight:
+    codeFences: true
+    lineNoStart: 1
+    lineNos: false
+    tabWidth: 4
