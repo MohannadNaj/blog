@@ -1,6 +1,6 @@
 #!/bin/bash
 
-images=$(find -E static/posts -regex ".*/.*.(png|jpeg)")
+images=$(find static/posts -type f \( -iname \*.jpeg -o  -iname \*.jpg -o -iname \*.png \))
 
 total=$(echo "$images" | wc -l)
 num=0
