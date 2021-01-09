@@ -1,3 +1,9 @@
+{{ $scratch := newScratch}}
+{{ $scratch.Set "path" .Destination}}
+{{ $scratch.Set "optimizedPath" (replace .Destination "posts" "posts-optimized" 1)}}
+{{ if (fileExists ( printf "%s%s" "static" ($scratch.Get "optimizedPath"))) }}
+{{ $scratch.Set "path" ($scratch.Get "optimizedPath")}}
+{{ end }}
 <p class="md__image">
-  <img src="{{ replace .Destination "posts" "posts-optimized" 1 | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
+    <img src="{{ $scratch.Get "path" | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
 </p>
