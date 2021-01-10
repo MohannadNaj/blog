@@ -2,7 +2,7 @@ baseURL: https://mohannadnaj.me/
 languageCode: en-us
 title: MohannadNaj.me
 theme: hugo-PaperMod
-disqusShortname: MohannadNaj.me
+disqusShortname: mohannadnaj-me
 params:
   ShowReadingTime: true
   comments: true
