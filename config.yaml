@@ -3,9 +3,30 @@ languageCode: en-us
 title: MohannadNaj.me
 theme: hugo-PaperMod
 disqusShortname: mohannadnaj-me
+defaultContentLanguage: en
+languages:
+  en:
+    languagedirection: ltr
+    LanguageName: English | Technical Blog
+    weight: 1
+  ar:
+    languagedirection: rtl
+    LanguageName: المدونة العربية
+    weight: 2
+    menu:
+      main:
+        - name: سِمات
+          weight: 2
+          url: ar/tags/
+    homeInfoParams:
+      Title: Mohannad Najjar | المدونة العربية
+      Content: >-
+        هنا مساحة للتدوين والكتابة
+
 params:
   ShowReadingTime: true
   comments: true
+  displayFullLangName: true
   homeInfoParams:
     Title: My name is Mohannad Najjar
     Content: >-
@@ -27,6 +48,9 @@ menu:
       weight: 2
       url: /tags/
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   highlight:
     codeFences: true
     lineNoStart: 1

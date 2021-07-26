@@ -1,0 +1,8 @@
+.justify {
+    text-align: justify;
+}
+
+figure {
+    display: inline-block;
+    margin: 1rem;
+}
