@@ -15,7 +15,7 @@ figure {
 
 /* Background styles */
 body {
-    background-size: cover !important;
+    background-size: 100% 100% !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
 }
