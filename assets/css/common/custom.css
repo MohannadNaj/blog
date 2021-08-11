@@ -1,3 +1,9 @@
+article.post-single {
+    padding: var(--gap);
+}
+.first-entry {
+    min-height: 150px;
+}
 .justify {
     text-align: justify;
 }
@@ -6,3 +12,41 @@ figure {
     display: inline-block;
     margin: 1rem;
 }
+
+/* Background styles */
+body {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1614849286447-fb815456e5a5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80') !important;
+    background-blend-mode: initial;
+}
+
+body.dark {
+    background-image: url('https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80') !important;
+    background-blend-mode: soft-light;
+}
+
+/* Glassmorphism card effect */
+
+body article.post-entry,
+body.dark article.post-single {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+body.dark article.post-entry,
+body.dark article.post-single {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
