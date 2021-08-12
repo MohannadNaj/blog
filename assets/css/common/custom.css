@@ -1,9 +1,11 @@
 article.post-single {
     padding: var(--gap);
 }
-.first-entry {
-    min-height: 150px;
+.home-info {
+    min-height: 150px !important;
+    padding: var(--gap);
 }
+
 .justify {
     text-align: justify;
 }
@@ -22,7 +24,8 @@ body {
 
 body {
     background-image: url('https://images.unsplash.com/photo-1614849286447-fb815456e5a5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80') !important;
-    background-blend-mode: initial;
+    background-image: url('https://images.unsplash.com/photo-1491183672482-d0af0e44929d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80') !important;
+    background-blend-mode: overlay;
 }
 
 body.dark {
@@ -32,17 +35,20 @@ body.dark {
 
 /* Glassmorphism card effect */
 
-body article.post-entry,
-body.dark article.post-single {
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(255, 255, 255, 0.75);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
+body article.home-info,
+body header nav {
+    background: rgb(220 220 220 / 65%);
+    box-shadow: 0 8px 32px rgb(103 103 103 / 37%);
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgb(0 0 0 / 18%);
 }
 
 body.dark article.post-entry,
-body.dark article.post-single {
+body.dark article.post-single,
+body.dark article.home-info,
+body.dark header nav {
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.75);
@@ -50,3 +56,35 @@ body.dark article.post-single {
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
+body article.post-entry,
+body article.post-single,
+body article.home-info,
+body header nav {
+    background: rgba( 231, 233, 247, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+body > header {
+    padding: 1rem;
+}
+
+
+body.dark article.home-info,
+body.dark header nav {
+    border: 1px solid #0d0e15;
+    box-shadow: 0 8px 32px rgb(71 71 71 / 37%);
+}
+
+article.post-entry:hover {
+    background: rgba( 231,233,247,0.1 );
+    box-shadow: 0 8px 32px rgb(7 9 38 / 37%);
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgb(255 255 255);
+}
