@@ -1,3 +1,11 @@
+article.post-single {
+    padding: var(--gap);
+}
+.home-info {
+    min-height: 150px !important;
+    padding: var(--gap);
+}
+
 .justify {
     text-align: justify;
 }
