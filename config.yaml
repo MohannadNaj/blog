@@ -23,6 +23,9 @@ languages:
       Content: >-
         هنا مساحة للتدوين والكتابة
 
+permalinks:
+  ar: /:filename
+  posts: /en/:slug
 params:
   ShowReadingTime: true
   comments: true
