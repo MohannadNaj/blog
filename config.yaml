@@ -7,7 +7,7 @@ defaultContentLanguage: en
 languages:
   en:
     languagedirection: ltr
-    LanguageName: English | Technical Blog
+    LanguageName: English - Technical Blog
     weight: 1
   ar:
     languagedirection: rtl
@@ -19,7 +19,7 @@ languages:
           weight: 2
           url: ar/tags/
     homeInfoParams:
-      Title: Mohannad Najjar | المدونة العربية
+      Title: Mohannad Najjar - المدونة العربية
       Content: >-
         هنا مساحة للتدوين والكتابة
 
