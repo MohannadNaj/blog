@@ -1,7 +1,7 @@
 baseURL: /
 languageCode: en-us
 title: MohannadNaj.me
-theme: hugo-PaperMod
+theme: papercss-hugo-theme
 disqusShortname: mohannadnaj-me
 defaultContentLanguage: en
 languages:

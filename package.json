@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "mix"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-sans-arabic": "^4.5.1",
+    "noto-sans-arabic": "^1.0.2"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.39"
+  }
+}

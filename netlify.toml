@@ -1,5 +1,5 @@
 [build]
-  command = "./scripts/optimize-images.sh && hugo"
+  command = "./scripts/optimize-images.sh && npm run build && hugo"
   context = "production"
   publish = "public"
 
